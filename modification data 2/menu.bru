@@ -1,0 +1,19 @@
+meta {
+  name: menu
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:5000/menu/67a449b7f159440e76694f2f
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name" : "burger",
+    "description" : "bread with chesse and veggie",
+    "price" : 200
+  }
+}
